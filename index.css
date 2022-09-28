@@ -38,6 +38,15 @@ button:hover{
 box-shadow: 1px 1px 8px 1px #000000;
 transition: .2s;
 }
+button:active {
+  position: relative;
+  top: 3px;
+}
+
+button:focus {
+  outline: none !important;
+  border: 1px solid #333333;
+}
 
 div.categorites{
   width: 50%;
@@ -62,4 +71,27 @@ div.categorites{
 
   .category:hover{
     border-bottom: 1px solid #000000;
+  }
+
+.listElement{
+  border-bottom: 1px solid #cecece;
+  }
+
+  .group{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+  .group>div,.group>input,.group>img{
+    margin-right: 25px;
+  }
+
+  .editButton{
+    width: 24px;
+    height: 24px;
+  }
+
+  .deleteButton{
+    width: 24px;
+    height: 24px;
   }
